@@ -18,22 +18,15 @@
     pkg="rosbag"
     type="record"
     name="recorder_ravenstate"
-    args="-b 0 -O /home/supernova/rosbags/recorder_ravenstate.bag ravenstate_100hz"
+    args="-b 0 -O /home/holyoke/raven2_CRTK_Python_controller/bag_reader/rosbags/recorder_ravenstate.bag ravenstate_100hz"
   />
 
   <node
     pkg="rosbag"
     type="record"
     name="recorder_crtk_measurejs"
-    args="-b 0 -O /home/supernova/rosbags/recorder_CRTKmeasurejs.bag /arm2/measured_js_100hz"
+    args="-b 0 -O /home/holyoke/raven2_CRTK_Python_controller/bag_reader/rosbags/recorder_CRTKmeasurejs.bag /arm2/measured_js_100hz"
   />
-
-
-  <node
-    pkg="rosbag"
-    type="record"
-    name="recorder_ext_jenc"
-    args="-b 0 -O /home/holyoke/raven2_CRTK_Python_controller/bag_reader/rosbags/recorder_ext_jenc.bag /ext_jpos"
-  />
+  
 
 </launch>
